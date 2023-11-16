@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>A-BET | Home</title>
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./root.css" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+  />
+  </head>
+  <body>
+    <div class="header">
+      <div onclick="window.location.href='index.html'" class="logo"> <img class="vector-icon" alt="" src="./public/vector3.svg"> </div>
+      <div onclick="window.location.href='index.html'" id="navi-item-underline" class="navi-item-active translate" data-original="MAIN">MAIN</div>
+      <div onclick="window.location.href='game-page.html'" class="navi-item-1 translate" data-original="SLOTS">SLOTS</div>
+      <div onclick="window.location.href='casino-page.html'" class="navi-item-2 translate" data-original="CASINO">CASINO</div>
+      <div onclick="window.location.href='shop-page.html'" class="navi-item-3 translate" data-original="SHOP">SHOP</div>
+
+      <div class="lang-switcher-container">
+        <div class="lang-switcher" onclick="toggleLangOptions()">ENG</div>
+        <div class="lang-options" id="langOptions">
+          <a onclick="changeLanguage('ENG')">ENG</a>
+          <a onclick="changeLanguage('GEO')">GEO</a>
+          <a onclick="changeLanguage('RUS')">RUS</a>
+        </div>
+      </div>
+
+      <button onclick="openPopup()" class="register-button translate" data-original="REGISTER">REGISTER</button>
+      <button onclick="openPopup()" class="login-button translate" data-original="LOGIN">LOGIN</button>
+      </div>
+
+      
+      <div id="overlay"></div>
+      <div id="popup">
+        <span id="close-btn" onclick="closePopup()">&times;</span>
+        <h2 class="translate" data-original="Registration Form">Registration Form</h2>
+        <form>
+          <label for="username" class="translate" data-original="Username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="email" class="translate" data-original="Email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password" class="translate" data-original="Password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button class="submit translate" type="submit" data-original="Register">Register</button>
+        </form>
+      </div>
+      
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="slide">
+            <img src="./public/146da3115603715-2@2x.png" alt="Slide 1">
+            <div class="content">
+              <div class="text translate" data-original="Slide 1 Text"><h8>Slide 1 Text</h8><br>
+              </div>
+              <a href="#" onclick="openPopup()" class="btn translate" data-original="Learn More">Learn More</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./public/146da3115603715-2@2x.png" alt="Slide 2">
+            <div class="content">
+              <div class="text translate" data-original="Slide 1 Text"><h8>Slide 1 Text</h8><br>
+              </div>
+              <a href="#" onclick="openPopup()" class="btn translate" data-original="Learn More">Learn More</a>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+
+
+      <div class="providers-list">
+            <img class="isoftbet-icon" alt="" src="./public/isoftbet.svg">
+
+            <img class="microgaming-icon" alt="" src="./public/microgaming.svg">
+
+            <img class="playn-go-icon" alt="" src="./public/playn-go.svg">
+
+            <img class="netent-icon" alt="" src="./public/netent.svg">
+
+            <img class="quickspin-icon" alt="" src="./public/quickspin.svg">
+
+            <img class="relax-icon" alt="" src="./public/relax.svg">
+
+            <img class="red-tiger-icon" alt="" src="./public/red-tiger.svg">
+
+            <img class="evolution-icon" alt="" src="./public/evolution.svg">
+            
+            <img class="isoftbet-icon" alt="" src="./public/isoftbet.svg">
+      </div>
+
+      
+<div onclick="window.location.href='game-page.html'" class="lobby-container"> 
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group3@2x.png" alt="Image 1">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group10@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group9@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group8@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group7@2x.png" alt="Image 5">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group6@2x.png" alt="Image 1">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group4@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 5">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group4@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 5">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group10@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group9@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group8@2x.png" alt="Image 4">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group3@2x.png" alt="Image 1">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group10@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group9@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group8@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group7@2x.png" alt="Image 5">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group6@2x.png" alt="Image 1">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group4@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 5">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group4@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 5">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group10@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group9@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group8@2x.png" alt="Image 4">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group3@2x.png" alt="Image 1">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group10@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group9@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group8@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group7@2x.png" alt="Image 5">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group6@2x.png" alt="Image 1">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group4@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 5">
+      </div>
+
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 2">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group4@2x.png" alt="Image 3">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group1@2x.png" alt="Image 4">
+      </div>
+      
+      <div class="image-container">
+        <img class="image-overlay" src="./public/play-button.png" alt="Image 1">
+        <img class="image" src="./public/mask-group2@2x.png" alt="Image 5">
+      </div>
+
+</div>
+
+
+<div class="footer-style">
+  <div class="main-content">
+    <section>
+      <h2 class="translate" data-original="About Us">About Us</h2>
+      <p class="translate" data-original="This is the about us section of your website.">This is the about us section of your website.</p>
+    </section>
+
+    <section>
+      <h2 class="translate" data-original="Contact">Contact</h2>
+      <p class="translate" data-original="Feel free to reach out to us at contact@example.com.">Feel free to reach out to us at contact@example.com.</p>
+    </section>
+
+    <section>
+      <h2 class="translate" data-original="Search">Search</h2>
+      <div class="search-container">
+        <input class="search-input" type="text" placeholder="Search...">
+        <button class="search-button translate" data-original="Search">Search</button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="mobile-footer">
+    <div class="social-links">
+      <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="https://freelogopng.com/images/all_img/1658587303instagram-png.png" alt="Instagram"></a>
+    </div>
+    <p class="translate" data-original="&copy; 2023 Your Website. All rights reserved.">&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+</div>
+
+<div class="header-2">
+<div></div>
+  <div onclick="window.location.href='index.html'" class="navi-item-active-mob translate" data-original="MAIN">MAIN</div>
+  <div onclick="window.location.href='game-page.html'" class="navi-item-1-mob translate" data-original="SLOTS">SLOTS</div>
+  <div onclick="window.location.href='casino-page.html'" class="navi-item-2-mob translate" data-original="CASINO">CASINO</div>
+  <div onclick="window.location.href='shop-page.html'" class="navi-item-3-mob translate" data-original="SHOP">SHOP</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="text/javascript" async defer src="https://app.papercups.io/widget.js"></script>
+  <script src="chat-widget.js"></script>
+  </body>

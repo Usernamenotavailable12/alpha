@@ -989,9 +989,7 @@ Faq
 #faq-container {
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px
+  padding: 20px;
 }
 
 .faq-item {

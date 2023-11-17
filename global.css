@@ -281,6 +281,7 @@ Carusel
 .text h8,
 .text {
   color: rgb(255, 255, 255,.8);
+  font-family: var(--font-inter);
 }
 
 .btn {
@@ -974,4 +975,44 @@ Chat Widget
   src: url('font/bpg_nino_mtavruli_bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+}
+
+
+
+/*
+
+Faq
+
+*/
+
+
+#faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+
+.faq-question {
+  background-color: #132d75;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--color-silver-100);
+}
+
+.faq-answer {
+  padding: 10px;
+  display: none;
+  background-color: #112250;
+  color: var(--color-silver-300);
+  font-size: var(--font-size-mini);
 }

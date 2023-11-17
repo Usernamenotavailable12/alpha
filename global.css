@@ -686,7 +686,7 @@ Bottom Header
   }
   .content {
     top: 70%;
-    z-index: 1000;
+    z-index: 100;
   }
 }
 @media (max-width: 400px) {
@@ -958,8 +958,8 @@ Chat Widget
 @media (max-width:768px) {
   .Papercups-toggleButtonContainer {
     margin-bottom: 35px;
-    transform: scale(.6);
-    margin-right: -10px;
+    transform: scale(.65);
+    margin-right: -8px;
     background-color: white;
     border-radius: 7px;
     transition: background-color .2s;

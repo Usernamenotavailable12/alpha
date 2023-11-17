@@ -59,8 +59,10 @@ Lang
     const elementsToTranslate = document.querySelectorAll('.translate');
     const translations = {
       'ENG': {
-        // English translations are the same as original texts
-        // Add translations here if needed
+        'What is your question 1?': 'What is your question 1?',
+        'This is the answer 1.': 'This is the answer 1.',
+        'What is your question 2?': 'What is your question 2?',
+        'This is the answer 2.': 'This is the answer 2.',
       },
       'GEO': {
         'MAIN': 'მთავარი',
@@ -85,6 +87,10 @@ Lang
         'Learn More': 'დეტალები',
         'Item 1': 'აითემი 1',
         'Buy': 'ყიდვა',
+        'What is your question 1?': 'რა არის თქვენი შეკითხვა 1?',
+        'This is the answer 1.': 'ეს არის პასუხი 1.',
+        'What is your question 2?': 'რა არის თქვენი შეკითხვა 2?',
+        'This is the answer 2.': 'ეს არის პასუხი 2.',
       },
       'RUS': {
         'MAIN': 'ГЛАВН',
@@ -109,6 +115,10 @@ Lang
         'Learn More': 'Узнать больше',
         'Item 1': 'Пункт 1',
         'Buy': 'Купить',
+        'What is your question 1?': 'Какой у вас вопрос 1?',
+        'This is the answer 1.': 'Это ответ 1.',
+        'What is your question 2?': 'Какой у вас вопрос 2?',
+        'This is the answer 2.': 'Это ответ 2.',
       },
     };
 

@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
           side: 'right',
           offset: '0px',
           tooltip: 'spider',
-          image: 'https://casino.online/wp-content/themes/ministrap-child/assets/images/christmas/christmas-scroll.png?v=3',
+          image: './public/christmas-scroll.png',
           web: 'background: repeating-linear-gradient(45deg, #287843, #287843 3px, #579a6e 3px,  #579a6e 6px);width:2px;height:999em;position:absolute;right:66%;bottom:84%;'
       },
       move: function () {

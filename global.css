@@ -1015,3 +1015,26 @@ Faq
   color: var(--color-silver-300);
   font-size: var(--font-size-mini);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+#scrollSpider {
+    display: none;
+}
+}

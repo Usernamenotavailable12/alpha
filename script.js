@@ -228,7 +228,7 @@ function initSnow() {
     snow[i].size = randomise(snowSize) + snowMinSize;
     snow[i].style.fontSize = snow[i].size + "px";
     snow[i].style.color = snowColor[randomise(snowColor.length)];
-    snow[i].style.zIndex = 1000;
+    snow[i].style.zIndex = 10;
     snow[i].style.opacity = .5;
     snow[i].sink = snowSpeed * snow[i].size / 5;
     snow[i].posX = randomise(marginRight - snow[i].size);

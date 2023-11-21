@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
           side: 'right',
           offset: '0px',
           tooltip: 'spider',
-          image: 'https://images.takeshape.io/f2b70d9b-56f9-4d2d-be98-874fcbc02a46/dev/bca09dd0-9c63-41d4-87e7-4e1c0b95ed7d/christmas-scroll.png',
+          image: 'https://casino.online/wp-content/themes/ministrap-child/assets/images/christmas/christmas-scroll.png?v=3',
           web: 'background: repeating-linear-gradient(45deg, #287843, #287843 3px, #579a6e 3px,  #579a6e 6px);width:2px;height:999em;position:absolute;right:66%;bottom:84%;'
       },
       move: function () {

@@ -281,38 +281,58 @@ Santa scroll
 
 
 
+$(document).on('click','.js-scroll-top-spider',function(){
+  $('html, body').animate({
+      scrollTop: $("body").offset().top
+  }, 1000);
+});
 
-document.addEventListener('DOMContentLoaded', function () {
-  var _scrollSpider = {
+
+(function () {
+  window._scrollSpider = {
+
       config: {
           side: 'right',
           offset: '0px',
+
           tooltip: 'spider',
           image: './public/christmas-scroll.png',
-          web: 'background: repeating-linear-gradient(45deg, #287843, #287843 3px, #579a6e 3px,  #579a6e 6px);width:2px;height:999em;position:absolute;right:66%;bottom:84%;'
+          web: 'background: repeating-linear-gradient( 45deg, #287843, #287843 3px, #579a6e 3px,  #579a6e 6px);width:2px;height:999em;position:absolute;right:66%;bottom:84%;'
       },
+
+      // move the spider based on the percentage the document has been scrolled
       move: function () {
           _scrollSpider.spider.style.top = ((document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100) + '%';
       },
+
+      // scroll the page to the top
       goingUp: false,
+
+
+      // offset the spider based on the height of the image
+      // this is so it's visible when the document is scrolled to 100%
       applyOffset: function () {
           var img = _scrollSpider.spider.getElementsByTagName('img')[0];
-          if (img) {
+
+
+          if (img && 0) {
               _scrollSpider.spider.style.marginTop = '-' + img.height + 'px';
-              _scrollSpider.spider.style.display = '';
+              _scrollSpider.spider.style.display = ''; // show spider after offset has been applied (should be properly hidden now)
           } else {
               window.addEventListener('load', _scrollSpider.applyOffset);
           }
       },
+
+      // initial setup of the scrolling spider element
       init: function () {
           var spider = document.createElement('DIV');
+
           spider.id = 'scrollSpider';
-          spider.innerHTML = '<div style="' + _scrollSpider.config.web + '"></div><img class="js-scroll-top-spider hvr-wobble-vertical" src="' + _scrollSpider.config.image + '" title="' + _scrollSpider.config.tooltip + '" srcset="' + _scrollSpider.config.image + ', ' + _scrollSpider.config.image.replace('.png', '@2x.png') + ' 2x">';
+          spider.innerHTML = '<div style="' + _scrollSpider.config.web + '"></div><img class="js-scroll-top-spider hvr-wobble-vertical" src="' + _scrollSpider.config.image + '"    title="' + _scrollSpider.config.tooltip + '"  srcset="./public/christmas-scroll.png,  ./public/christmas-scroll2x.png 2x">';
           spider.style.position = 'fixed';
-          spider.style.zIndex = '4';
           spider.style[/left|right/i.test(_scrollSpider.config.side) ? _scrollSpider.config.side : 'right'] = _scrollSpider.config.offset;
           spider.style.top = '0%';
-          spider.style.display = 'none';
+          spider.style.display = 'none'; // keeps spider hidden until image has been loaded (otherwise it'll be briefly visible until the offset is applied)
 
           document.body.appendChild(spider);
 
@@ -330,7 +350,10 @@ document.addEventListener('DOMContentLoaded', function () {
               }
           });
       }
+
   };
 
-  _scrollSpider.init();
-});
+  if (document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', _scrollSpider.init); // perform initialization when the DOM is loaded
+  }
+}());

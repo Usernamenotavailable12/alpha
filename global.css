@@ -1032,9 +1032,8 @@ Faq
 
 
 
-
-@media(max-width:768px){
-#scrollSpider {
-    display: none;
+@media (max-width: 992px) {
+  #scrollSpider img {
+    max-width: 40px !important;
 }
 }

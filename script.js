@@ -173,7 +173,7 @@ function toggleLangOptions() {
 
 
 // Amount of Snowflakes
-var snowMax = 35;
+var snowMax = 25;
 
 // Snowflake Colours
 var snowColor = ["rgb(255,255,255)", "rgb(2255,2255,255)"];

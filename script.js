@@ -309,7 +309,6 @@ document.addEventListener('DOMContentLoaded', function () {
           spider.id = 'scrollSpider';
           spider.innerHTML = '<div style="' + _scrollSpider.config.web + '"></div><img class="js-scroll-top-spider hvr-wobble-vertical" src="' + _scrollSpider.config.image + '" title="' + _scrollSpider.config.tooltip + '" srcset="' + _scrollSpider.config.image + ', ' + _scrollSpider.config.image.replace('.png', '@2x.png') + ' 2x">';
           spider.style.position = 'fixed';
-          spider.style.transform = 'scale(.7)';
           spider.style.zIndex = '4';
           spider.style[/left|right/i.test(_scrollSpider.config.side) ? _scrollSpider.config.side : 'right'] = _scrollSpider.config.offset;
           spider.style.top = '0%';

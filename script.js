@@ -332,6 +332,7 @@ $(document).on('click','.js-scroll-top-spider',function(){
           spider.style.position = 'fixed';
           spider.style[/left|right/i.test(_scrollSpider.config.side) ? _scrollSpider.config.side : 'right'] = _scrollSpider.config.offset;
           spider.style.top = '0%';
+          spider.style.zIndex = 11;
           spider.style.display = 'none'; // keeps spider hidden until image has been loaded (otherwise it'll be briefly visible until the offset is applied)
 
           document.body.appendChild(spider);

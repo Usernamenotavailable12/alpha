@@ -358,3 +358,29 @@ $(document).on('click','.js-scroll-top-spider',function(){
       document.addEventListener('DOMContentLoaded', _scrollSpider.init); // perform initialization when the DOM is loaded
   }
 }());
+
+
+
+/*
+
+
+Remove .html
+
+
+*/
+
+
+    // Check if the browser supports the History API
+    if (window.history && window.history.pushState) {
+      // Add a click event listener to all links
+      document.addEventListener('click', function(e) {
+        // Check if the clicked element is an anchor tag and has a "href" attribute
+        if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
+          e.preventDefault(); // Prevent the default link behavior
+          const href = e.target.getAttribute('href');
+          const modifiedHref = href.endsWith('.html') ? href.slice(0, -5) : href;
+          // Use pushState to change the URL without triggering a full page reload
+          window.history.pushState({}, '', modifiedHref);
+        }
+      });
+    }

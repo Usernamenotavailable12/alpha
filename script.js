@@ -370,17 +370,26 @@ Remove .html
 */
 
 
-    // Check if the browser supports the History API
-    if (window.history && window.history.pushState) {
-      // Add a click event listener to all links
-      document.addEventListener('click', function(e) {
-        // Check if the clicked element is an anchor tag and has a "href" attribute
-        if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
-          e.preventDefault(); // Prevent the default link behavior
-          const href = e.target.getAttribute('href');
-          const modifiedHref = href.endsWith('.html') ? href.slice(0, -5) : href;
-          // Use pushState to change the URL without triggering a full page reload
-          window.history.pushState({}, '', modifiedHref);
-        }
+ // Remove ".html" extension from URLs
+ document.addEventListener('DOMContentLoaded', function() {
+  // Get all links on the page
+  var links = document.querySelectorAll('a');
+
+  // Loop through each link
+  links.forEach(function(link) {
+    // Check if the link ends with ".html"
+    if (link.href.endsWith('.html')) {
+      // Remove ".html" from the link
+      var newHref = link.href.slice(0, -5); // assuming ".html" is 5 characters long
+      
+      // Update the link with the new href
+      link.setAttribute('href', newHref);
+
+      // Add a click event listener to handle navigation
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default navigation
+        history.pushState(null, null, newHref); // Update the URL without reloading
       });
     }
+  });
+});

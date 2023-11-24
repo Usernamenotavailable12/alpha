@@ -358,38 +358,3 @@ $(document).on('click','.js-scroll-top-spider',function(){
       document.addEventListener('DOMContentLoaded', _scrollSpider.init); // perform initialization when the DOM is loaded
   }
 }());
-
-
-
-/*
-
-
-Remove .html
-
-
-*/
-
-
- // Remove ".html" extension from URLs
- document.addEventListener('DOMContentLoaded', function() {
-  // Get all links on the page
-  var links = document.querySelectorAll('a');
-
-  // Loop through each link
-  links.forEach(function(link) {
-    // Check if the link ends with ".html"
-    if (link.href.endsWith('.html')) {
-      // Remove ".html" from the link
-      var newHref = link.href.slice(0, -5); // assuming ".html" is 5 characters long
-      
-      // Update the link with the new href
-      link.setAttribute('href', newHref);
-
-      // Add a click event listener to handle navigation
-      link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default navigation
-        history.pushState(null, null, newHref); // Update the URL without reloading
-      });
-    }
-  });
-});

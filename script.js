@@ -358,21 +358,3 @@ $(document).on('click','.js-scroll-top-spider',function(){
       document.addEventListener('DOMContentLoaded', _scrollSpider.init); // perform initialization when the DOM is loaded
   }
 }());
-
-
-      // 
-
-//Add Manifest
-
-     //
-
-    document.addEventListener('DOMContentLoaded', function() {
-      // Create a new link element
-      var linkElement = document.createElement('link');
-
-      // Set attributes for the link element
-      linkElement.rel = 'manifest';
-      linkElement.href = './manifest.json';
-
-      // Append the link element to the head of the document
-      document.head.appendChild(linkElement);
